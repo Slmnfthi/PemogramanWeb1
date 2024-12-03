@@ -1,0 +1,16 @@
+body {
+    background-color: brown;
+    display: flex;
+}
+
+.foto {
+    margin: 20px;
+}
+
+.foto img {
+    width: 400px;
+    height: 370px;
+    margin-left: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+}

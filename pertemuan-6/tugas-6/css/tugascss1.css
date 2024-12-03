@@ -1,0 +1,46 @@
+/* styling box */
+body {
+    margin-left: 50px;
+}
+
+.box {
+    width: 250px;
+    height: 600px;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+.red {
+    background-color: red;
+    height: 200px;
+    width: 1785px;
+    margin-bottom: 30px;
+}
+
+.yellow {
+    background-color: yellow;
+    height: 240px;
+    float: left;
+    border-radius: 30px;
+}
+
+.green {
+    background-color: greenyellow;
+    height: 240px;
+    float: left;
+    width: 1490px;
+}
+
+.kuninghijau {
+    background-color: rgb(217, 255, 0);
+    height: 240px;
+    float: left;
+    border-radius: 30px;
+}
+
+.blue {
+    background-color: blue;
+    height: 240px;
+    float: left;
+    width: 1490px;
+}
