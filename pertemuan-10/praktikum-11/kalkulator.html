@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <script>
+        function hitung() {
+            let x = Number(document.getElementById("bil1").value);
+            let y = Number(document.getElementById("bil2").value);
+            let operator = document.getElementById("operator").value;
+            let hasil;
+
+            switch (operator) {
+                case '+':
+                    hasil = x + y;
+                    break;
+                case '-':
+                    hasil = x - y;
+                    break;
+                case '*':
+                    hasil = x * y;
+                    break;
+                case '/':
+                    hasil = y !== 0 ? x / y : 'Tidak bisa dibagi dengan nol';
+                    break;
+                default:
+                    hasil = 'Operator tidak valid';
+            }
+
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+</head>
+<body>
+    <h2>Kalkulator Sederhana</h2>
+    <form id="frm1">
+        <input type="text" id="bil1" value="0" onchange="hitung()"/>
+        <select id="operator" onchange="hitung()">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="bil2" value="0" onchange="hitung()"/>
+        <b>=</b>
+        <input type="text" id="hasil" value="0" readonly/>
+    </form>
+</body>
+</html>
